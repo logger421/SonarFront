@@ -1,0 +1,166 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+    --primary: #1aac83;
+    --secondary: #808080;
+    --error: #e7195a;
+    --warning: #ffa500;
+}
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+header {
+    background: #dddddd;
+}
+
+header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* homepage */
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+}
+
+.item-details {
+    background: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 15px 15px 25px var(--secondary);
+}
+
+.item-details h3 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: var(--primary);
+}
+
+.item-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.item-details span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+}
+
+/* Form */
+label, input {
+    display: block;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button.submit-item {
+    background: var(--secondary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input.error {
+    border: 1px solid var(--error);
+}
+
+p.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+span.delete-color {
+    color: var(--error);
+    background: #dddddd;
+}
+
+span.cart-color {
+    color: var(--warning);
+    background: #f1f1f1;
+}
+
+button.disabled {
+    background: var(--secondary);
+    color: #fff;
+    cursor: not-allowed;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 30px;
+}
